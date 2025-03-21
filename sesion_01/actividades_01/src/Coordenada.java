@@ -32,7 +32,9 @@ public class Coordenada {
         return Math.sqrt(dx * dx + dy*dy);
     }
     static double distancia(Coordenada c1, Coordenada c2){
-
+        double dx = c2.x - c1.x;
+        double dy = c2.y - c1.y;
+        return Math.sqrt(dx*dx +dy*dy);
     }
     String toString(){
 
