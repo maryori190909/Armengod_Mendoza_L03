@@ -27,7 +27,9 @@ public class Coordenada {
         return y;
     }
     double distancia(Coordenada c){
-
+        double dx = c.x -this.x;
+        double dy =c.y - this.y;
+        return Math.sqrt(dx * dx + dy*dy);
     }
     static double distancia(Coordenada c1, Coordenada c2){
 
