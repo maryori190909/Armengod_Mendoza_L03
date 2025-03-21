@@ -55,10 +55,10 @@ public class Rectangulo {
         this.esquina2 = new Coordenada(coo);
     }
     public Coordenada getEsquina1 (){
-
+        return new Coordenada(esquina1);
     }
     public Coordenada getEsquina2 (){
-
+        return new Coordenada(esquina2);
     }
     public String toString(){
         
