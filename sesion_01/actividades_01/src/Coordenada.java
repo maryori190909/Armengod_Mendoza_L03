@@ -36,7 +36,8 @@ public class Coordenada {
         double dy = c2.y - c1.y;
         return Math.sqrt(dx*dx +dy*dy);
     }
+    @Override
     String toString(){
-
+        return"("+ x +"," + y + ")" ;
     }
 }
