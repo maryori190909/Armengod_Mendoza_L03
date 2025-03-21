@@ -5,5 +5,15 @@ public class Principal {
         Scanner scanner = new Scanner (System.in);
         System.out.println("Ingrese las cordenas del rectangulo1 : ");
         System.out.println("Esquina1 (x,y) : ");
+        double x1 = scanner.nextDouble();
+        double y1 = scanner.nextDouble();
+        System.out.println("Esquina2 (x,y) :");
+        double x2 = scanner.nextDouble();
+        double y2 = scanner.nextDouble();
+        
+        Coordenada esquina1A = new Coordenada(x1,y1);
+        Coordenada esquina2A = new Coordenada(x2,y2);
+        Rectangulo A = new Rectangulo(esquina1A, esquina2A);
+
     }
 }
