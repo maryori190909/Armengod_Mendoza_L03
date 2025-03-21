@@ -49,10 +49,10 @@ public class Rectangulo {
         setEsquina2(c2);
     }
     public void setEsquina1 (Coordenada coo){
-
+        this.esquina1 = new Coordenada(coo);
     }
     public void setEsquina2 (Coordenada coo){
-
+        this.esquina2 = new Coordenada(coo);
     }
     public Coordenada getEsquina1 (){
 
