@@ -61,7 +61,7 @@ public class Rectangulo {
         return new Coordenada(esquina2);
     }
     public String toString(){
-        
+        return "El rectangulo tiene coordenada: [ "+esquina1 + " - " + esquina2 + "] ";
     }
 }
 
