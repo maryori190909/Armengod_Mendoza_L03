@@ -24,6 +24,9 @@ public class Rectangulo {
     public double getXMax() {
         return Math.max(esquina1.getX(), esquina2.getX());
     }
+    public double getYMin() {
+        return Math.min(esquina1.getY(), esquina2.getY());
+    }
 
     @Override
     public String toString(){
