@@ -17,6 +17,11 @@ public class Rectangulo {
     public Coordenada getEsquina2 (){
         return new Coordenada(esquina2);
     }
+
+    public double getXMin() {
+        return Math.min(esquina1.getX(), esquina2.getX());
+    }
+    
     @Override
     public String toString(){
         return "El rectangulo tiene coordenada: [ "+esquina1 + " - " + esquina2 + "] ";
