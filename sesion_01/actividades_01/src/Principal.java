@@ -48,5 +48,12 @@ public class Principal {
             Rectangulo interseccion = rectanguloInterseccion(A, B);
             System.out.printf("area de sobreposición = %.2f%n", interseccion.calculoArea());
 
+        } else if (Verificador.esJunto(A, B)) {
+            System.out.println("rectangulos A y B se juntan.");
+        } else {
+            System.out.println("rectangulos A y B son disjuntos.");
+        }
+        scanner.close();
+
     }
 }
