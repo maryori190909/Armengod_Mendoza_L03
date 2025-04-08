@@ -23,5 +23,9 @@ public class Principal {
         double x4 = scanner.nextDouble();
         double y4 = scanner.nextDouble();
 
+        Coordenada esquina1B = new Coordenada(x3,y3);
+        Coordenada esquina2B = new Coordenada(x4,y4);
+        Rectangulo B = new Rectangulo(esquina1B, esquina2B);
+
     }
 }
