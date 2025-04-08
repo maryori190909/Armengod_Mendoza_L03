@@ -60,6 +60,7 @@ public class Rectangulo {
     public Coordenada getEsquina2 (){
         return new Coordenada(esquina2);
     }
+    @Override
     public String toString(){
         return "El rectangulo tiene coordenada: [ "+esquina1 + " - " + esquina2 + "] ";
     }
