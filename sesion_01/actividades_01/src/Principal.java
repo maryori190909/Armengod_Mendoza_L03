@@ -43,5 +43,9 @@ public class Principal {
         mostrarRectangulo("rectangulo A", A);
         mostrarRectangulo("rectangulo B", B);
 
+        if (Verificador.esSobrePos(A, B)) {
+            System.out.println("Rectangulos A y B se sobreponen.");
+            Rectangulo interseccion = rectanguloInterseccion(A, B);
+            
     }
 }
