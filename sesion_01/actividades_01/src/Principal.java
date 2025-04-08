@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Principal {
+    public static void mostrarRectangulo(String nombre, Rectangulo r) {
+        System.out.println("Rectángulo " + nombre + " = " + r.toString());
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
         System.out.println("Ingrese las cordenas del rectangulo1 : ");
@@ -26,7 +29,7 @@ public class Principal {
         Coordenada esquina1B = new Coordenada(x3,y3);
         Coordenada esquina2B = new Coordenada(x4,y4);
         Rectangulo B = new Rectangulo(esquina1B, esquina2B);
-        
+
 
     }
 }
