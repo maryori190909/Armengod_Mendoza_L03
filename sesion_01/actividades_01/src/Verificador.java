@@ -21,3 +21,7 @@ public static boolean esJunto(rectangulo r1, rectangulo r2){
         (r1.getYMax() == r2.getYMin() || r1.getYMin() == r2.getYMax());
         return tocanVertical || tocanHorizontal || tocanEsquina;}
 }
+public static boolean esDisjunto(rectangulo r1, rectangulo r2) {
+    return !esSobrePos(r1,r2)&& !esJunto(r1, r2);
+}
+}
