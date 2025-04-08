@@ -9,6 +9,10 @@ public class Principal {
         double xMax = Math.min(r1.getXMax(), r2.getXMax());
         double yMin = Math.max(r1.getYMin(), r2.getYMin());
         double yMax = Math.min(r1.getYMax(), r2.getYMax());
+        Coordenada esquina1 = new Coordenada(xMin, yMin);
+        Coordenada esquina2 = new Coordenada(xMax, yMax);
+
+        return new Rectangulo(esquina1, esquina2);
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
