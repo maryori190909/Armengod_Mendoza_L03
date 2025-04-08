@@ -15,5 +15,13 @@ public class Principal {
         Coordenada esquina2A = new Coordenada(x2,y2);
         Rectangulo A = new Rectangulo(esquina1A, esquina2A);
 
+        System.out.println("Ingrese las cordenas del rectangulo2 : ");
+        System.out.println("Esquina1 (x,y) : ");
+        double x3 = scanner.nextDouble();
+        double y3 = scanner.nextDouble();
+        System.out.println("Esquina2 (x,y) :");
+        double x4 = scanner.nextDouble();
+        double y4 = scanner.nextDouble();
+
     }
 }
