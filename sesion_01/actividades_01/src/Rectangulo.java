@@ -36,6 +36,6 @@ public class Rectangulo {
     }
     @Override
     public String toString(){
-        return "El rectangulo tiene coordenada: [ "+esquina1 + " - " + esquina2 + "] ";
+        return "El rectangulo tiene coordenada: ([" + getXMin() + ", " + getYMin() + "], [" + getXMax() + ", " + getYMax() + "])";
     }
 }
