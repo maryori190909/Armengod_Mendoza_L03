@@ -9,3 +9,10 @@ public class Verificador {
         return true;
     }
 }
+public static boolean esJUnto(rectangulo r1, rectangulo r2){
+    if(esSobrePos(r1,r2)){
+    return false;}
+    else{
+        
+    }
+}
