@@ -19,5 +19,5 @@ public static boolean esJunto(rectangulo r1, rectangulo r2){
         (r1.getXMax() == r2.getXMin() || r1.getXMin() == r2.getXMax());
         boolean tocanEsquina = (r1.getXMax() == r2.getXMin() || r1.getXMin() == r2.getXMax()) &&
         (r1.getYMax() == r2.getYMin() || r1.getYMin() == r2.getYMax());
-    }
+        return tocanVertical || tocanHorizontal || tocanEsquina;}
 }
