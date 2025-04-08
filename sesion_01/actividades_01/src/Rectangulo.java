@@ -31,7 +31,9 @@ public class Rectangulo {
     public double getYMax() {
         return Math.max(esquina1.getY(), esquina2.getY());
     }
-
+    public double calculoArea() {
+        return Math.abs((getXMax() - getXMin()) * (getYMax() - getYMin()));
+    }
     @Override
     public String toString(){
         return "El rectangulo tiene coordenada: [ "+esquina1 + " - " + esquina2 + "] ";
