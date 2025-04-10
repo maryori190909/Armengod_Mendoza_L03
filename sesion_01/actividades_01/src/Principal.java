@@ -31,8 +31,11 @@ public class Principal {
             System.out.println("Rectangulos A y B se sobreponen.");
             Rectangulo interseccion = rectanguloInterseccion(A, B);
             System.out.printf("Área de sobreposición = %.2f%n", interseccion.calculoArea());
+        } else if (Verificador.esJunto(A, B)) {
+            System.out.println("Rectangulos A y B se juntan.");
+        } else {
+            System.out.println("Rectangulos A y B son disjuntos.");
         }
-
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
