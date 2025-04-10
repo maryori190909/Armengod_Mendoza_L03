@@ -20,10 +20,10 @@ public class Coordenada {
     void setY(double y){
         this.y =y;
     }
-    double getX(double x){
+    double getX(){
         return this.x;
     }
-    double getY(double y){
+    double getY(){
         return this.y;
     }
     double distancia(Coordenada c){
