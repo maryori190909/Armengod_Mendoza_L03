@@ -27,5 +27,15 @@ public class ContainerRect {
             return false;
         }
     }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Rectangulo\\tCoordenadas\\t\\tDistancia\\tArea\\n");
+        for(int i=0; i< numRec ; i++){
+            sb.append((i+1)).append("\t").append(rectangulos[i].toString()).append("\t").append(String.format("%.3f", distancias[i]))
+            .append("\t\t").append(String.format("%.2f", areas[i])).append("\n");
+        }
+        return sb.toString();
+    }
 
 }
