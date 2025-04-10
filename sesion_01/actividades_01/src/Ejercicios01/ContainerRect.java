@@ -22,7 +22,10 @@ public class ContainerRect {
             numRec++;
             return true;
         }
-        
+        else{
+            System.out.println("capacidad sobrepasada, no se puede agregar mas rectangulos ");
+            return false;
+        }
     }
 
 }
