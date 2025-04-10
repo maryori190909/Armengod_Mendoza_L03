@@ -84,8 +84,17 @@ public class Principal {
                 System.out.println("rectangulos A y B son disjuntos.");
             }
 
+        } else if (opcion == 2){
+            double[] coordsA1 = {1.5,0.3,7.6,2.2};
+            double[] coordsB1 = {4.0,4.2,9.4,-2.5};
+
+            double[] coordsA2 = {20.5,-1.1,33.3,3.6};
+            double[] coordsB2 = {10.3,-5.2,20.5,8.6};
+
+            double[] coordsA3 = {4.0,0.1,9.0,5.0};
+            double[] coordsB3 = {0.0,6.0,5.0,11.0};
         }
-        
+
         scanner.close();
 
     }
