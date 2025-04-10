@@ -18,6 +18,10 @@ public class Principal {
         Coordenada esquina1A = new Coordenada(coordsA[0], coordsA[1]);
         Coordenada esquina2A = new Coordenada(coordsA[2], coordsA[3]);
         Rectangulo A = new Rectangulo(esquina1A, esquina2A);
+
+        Coordenada esquina1B = new Coordenada(coordsB[0], coordsB[1]);
+        Coordenada esquina2B = new Coordenada(coordsB[2], coordsB[3]);
+        Rectangulo B = new Rectangulo(esquina1B, esquina2B);
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
