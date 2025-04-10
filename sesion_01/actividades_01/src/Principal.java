@@ -22,6 +22,17 @@ public class Principal {
         Coordenada esquina1B = new Coordenada(coordsB[0], coordsB[1]);
         Coordenada esquina2B = new Coordenada(coordsB[2], coordsB[3]);
         Rectangulo B = new Rectangulo(esquina1B, esquina2B);
+
+        System.out.println("\n prueba " + numeroPrueba );
+        mostrarRectangulo("A", A );
+        mostrarRectangulo("B", B);
+
+        If(Verificador.esSobrePos(A, B)){
+            System.out.println("Rectangulos A y B se sobreponen.");
+            Rectangulo interseccion = rectanguloInterseccion(A, B);
+            System.out.printf("Área de sobreposición = %.2f%n", interseccion.calculoArea());
+        }
+
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
