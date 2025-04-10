@@ -17,7 +17,12 @@ public class ContainerRect {
             double dx = r.getEsquina1().getX() - r.getEsquina2().getX();
             double dy = r.getEsquina1().getY() - r.getEsquina2().getY();
             distancias[numRec] = Math.sqrt(dx * dx + dy * dy);
+
+            areas[numRec] = r.calculoArea();
+            numRec++;
+            return true;
         }
+        
     }
 
 }
