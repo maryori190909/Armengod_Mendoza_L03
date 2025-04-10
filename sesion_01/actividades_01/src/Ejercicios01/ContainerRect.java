@@ -30,10 +30,15 @@ public class ContainerRect {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Rectangulo\\tCoordenadas\\t\\tDistancia\\tArea\\n");
         for(int i=0; i< numRec ; i++){
-            sb.append((i+1)).append("\t").append(rectangulos[i].toString()).append("\t").append(String.format("%.3f", distancias[i]))
-            .append("\t\t").append(String.format("%.2f", areas[i])).append("\n");
+        sb.append("Rectángulo ").append(i + 1).append("\n");
+            sb.append("Coordenadas: ([").append(String.format("%.1f", rectangulos[i].getEsquina1().getX())).append(", ")
+            .append(String.format("%.1f", rectangulos[i].getEsquina1().getY())).append("], [")
+            .append(String.format("%.1f", rectangulos[i].getEsquina2().getX())).append(", ")
+            .append(String.format("%.1f", rectangulos[i].getEsquina2().getY())).append("])\n");
+
+            sb.append("Distancia: ").append(String.format("%.3f", distancias[i])).append("\n");
+            sb.append("Área: ").append(String.format("%.2f", areas[i])).append("\n\n");
         }
         return sb.toString();
     }
