@@ -39,6 +39,12 @@ public class Principal {
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
+        System.out.println("Seleccione el modo: ");
+        System.out.println("1 Ingreso manual ");
+        System.out.println("2 Probar casos automaticos ");
+        System.out.print("opcion: ");
+
+        int opcion = scanner.nextInt();
         System.out.println("Ingrese las cordenas del rectangulo1 : ");
         System.out.println("Esquina1 (x,y) : ");
         double x1 = scanner.nextDouble();
