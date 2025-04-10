@@ -27,7 +27,7 @@ public class Principal {
         mostrarRectangulo("A", A );
         mostrarRectangulo("B", B);
 
-        If(Verificador.esSobrePos(A, B)){
+        if(Verificador.esSobrePos(A, B)){
             System.out.println("Rectangulos A y B se sobreponen.");
             Rectangulo interseccion = rectanguloInterseccion(A, B);
             System.out.printf("Área de sobreposición = %.2f%n", interseccion.calculoArea());
@@ -43,6 +43,7 @@ public class Principal {
         System.out.println("1 Ingreso manual ");
         System.out.println("2 Probar casos automaticos ");
         System.out.print("opcion: ");
+        int opcion = scanner.nextInt();
 
         if (opcion == 1) {
 
