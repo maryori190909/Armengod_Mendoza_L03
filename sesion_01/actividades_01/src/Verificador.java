@@ -1,7 +1,7 @@
 public class Verificador {
 
     public static boolean esSobrePos(Rectangulo r1, Rectangulo r2){
-        if (r1.getXMAx()<= r2.getXMin() || r1.getXMin ()>= r2.getXMax() ||
+        if (r1.getXMax()<= r2.getXMin() || r1.getXMin ()>= r2.getXMax() ||
         r1.getYMax() <= r2.getYMin() || r1.getYMin() >= r2.getYMax()) {
         return false;
     }
@@ -9,7 +9,7 @@ public class Verificador {
         return true;
     }
 }
-public static boolean esJunto(rectangulo r1, rectangulo r2){
+public static boolean esJunto(Rectangulo r1, Rectangulo r2){
     if(esSobrePos(r1,r2)){
     return false;}
     else{
@@ -21,7 +21,7 @@ public static boolean esJunto(rectangulo r1, rectangulo r2){
         (r1.getYMax() == r2.getYMin() || r1.getYMin() == r2.getYMax());
         return tocanVertical || tocanHorizontal || tocanEsquina;}
 }
-public static boolean esDisjunto(rectangulo r1, rectangulo r2) {
+public static boolean esDisjunto(Rectangulo r1, Rectangulo r2) {
     return !esSobrePos(r1,r2)&& !esJunto(r1, r2);
 }
 }

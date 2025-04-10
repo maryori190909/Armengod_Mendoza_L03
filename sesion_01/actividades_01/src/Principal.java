@@ -4,9 +4,9 @@ public class Principal {
     public static void mostrarRectangulo(String nombre, rectangulo r) {
         System.out.println("Rectangulo " + nombre + " = " + r.toString());
     }
-    public static Rectangulo rectanguloInterseccion(rectangulo r1, rectangulo r2) {
+    public static Rectangulo rectanguloInterseccion(Rectangulo r1, Rectangulo r2) {
         double xMin = Math.max(r1.getXMin(), r2.getXMin());
-        double xMax = Math.min(r1.getXMax(), r2.getXMax());
+        double xMax5 = Math.min(r1.getXMax(), r2.getXMax());
         double yMin = Math.max(r1.getYMin(), r2.getYMin());
         double yMax = Math.min(r1.getYMax(), r2.getYMax());
         Coordenada esquina1 = new Coordenada(xMin, yMin);
