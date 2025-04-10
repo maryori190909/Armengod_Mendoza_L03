@@ -14,6 +14,11 @@ public class Principal {
 
         return new Rectangulo(esquina1, esquina2);
     }
+    public static void probarCaso(double[]coordsA, double[] coordsB, int numeroPrueba){
+        Coordenada esquina1A = new Coordenada(coordsA[0], coordsA[1]);
+        Coordenada esquina2A = new Coordenada(coordsA[2], coordsA[3]);
+        Rectangulo A = new Rectangulo(esquina1A, esquina2A);
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
         System.out.println("Ingrese las cordenas del rectangulo1 : ");
