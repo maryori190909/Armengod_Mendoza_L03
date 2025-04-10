@@ -21,10 +21,10 @@ public class Coordenada {
         this.y =y;
     }
     double getX(double x){
-        return x;
+        return this.x;
     }
     double getY(double y){
-        return y;
+        return this.y;
     }
     double distancia(Coordenada c){
         double dx = c.x -this.x;
@@ -37,7 +37,7 @@ public class Coordenada {
         return Math.sqrt(dx*dx +dy*dy);
     }
     @Override
-    String toString(){
+    public String toString(){
         return"("+ x +"," + y + ")" ;
     }
 }
