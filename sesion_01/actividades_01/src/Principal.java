@@ -93,6 +93,13 @@ public class Principal {
 
             double[] coordsA3 = {4.0,0.1,9.0,5.0};
             double[] coordsB3 = {0.0,6.0,5.0,11.0};
+
+            probarCaso(coordsA1, coordsB1, 1);
+            probarCaso(coordsA2, coordsB2, 2);
+            probarCaso(coordsA3, coordsB3, 3);
+        }
+        else{
+            System.out.println("opcion no valida");
         }
 
         scanner.close();
