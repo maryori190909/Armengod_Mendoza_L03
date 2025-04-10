@@ -44,6 +44,7 @@ public class Principal {
         System.out.println("2 Probar casos automaticos ");
         System.out.print("opcion: ");
         int opcion = scanner.nextInt();
+        ContainerRect container = new ContainerRect(5);
 
         if (opcion == 1) {
 
@@ -70,7 +71,10 @@ public class Principal {
             Coordenada esquina1B = new Coordenada(x3,y3);
             Coordenada esquina2B = new Coordenada(x4,y4);
             Rectangulo B = new Rectangulo(esquina1B, esquina2B);
-            
+
+            container.addRectangulo(A);
+            container.addRectangulo(B);
+
             mostrarRectangulo("rectangulo A", A);
             mostrarRectangulo("rectangulo B", B);
 
@@ -102,6 +106,9 @@ public class Principal {
         else{
             System.out.println("opcion no valida");
         }
+        
+        System.out.println("\nContenido del contenedor de rectángulos:");
+        System.out.println(container.toString());
 
         scanner.close();
 
